@@ -1,0 +1,389 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+nav {
+  top: 0;
+  left: 0;
+  position: fixed;
+  min-height: 10vh;
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 40px;
+  z-index: 1;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  background-size: cover;
+}
+
+.ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (max-width: 600px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .ul {
+    gap: 15px;
+  }
+}
+@media screen and (max-width: 400px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .ul {
+    gap: 10px;
+  }
+}
+
+.list {
+  list-style: none;
+}
+
+.aa {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.aa:hover {
+  color: rgb(200, 195, 195);
+}
+
+.aa:active {
+  color: rgb(127, 127, 127);
+}
+
+.top {
+  position: relative;
+  left: 0;
+  width: 100vw;
+  height: 90vh;
+  background-image: url(../images/top2.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 0;
+}
+
+.htop {
+  position: absolute;
+  color: white;
+  font-size: 3rem;
+  z-index: 1;
+  margin-right: 20vw;
+  animation-name: hello;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes hello {
+  0% {
+    color: rgb(205, 145, 145);
+  }
+  10% {
+    color: rgb(188, 114, 114);
+  }
+  20% {
+    color: rgb(196, 74, 74);
+  }
+  30% {
+    color: rgb(158, 13, 13);
+  }
+  40% {
+    color: rgb(110, 4, 4);
+  }
+  50% {
+    color: rgb(72, 4, 4);
+  }
+  60% {
+    color: rgb(110, 4, 4);
+  }
+  70% {
+    color: rgb(158, 13, 13);
+  }
+  80% {
+    color: rgb(196, 74, 74);
+  }
+  90% {
+    color: rgb(188, 114, 114);
+  }
+  100% {
+    color: rgb(205, 145, 145);
+  }
+}
+.htop::after {
+  content: "|";
+  animation-name: world;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes world {
+  0% {
+    content: "|";
+  }
+  10% {
+    content: "W|";
+  }
+  20% {
+    content: "Wo|";
+  }
+  30% {
+    content: "Wor|";
+  }
+  40% {
+    content: "Worl|";
+  }
+  50% {
+    content: "World|";
+  }
+  60% {
+    content: "Worl|";
+  }
+  70% {
+    content: "Wor|";
+  }
+  80% {
+    content: "Wo|";
+  }
+  90% {
+    content: "W|";
+  }
+  100% {
+    content: "|";
+  }
+}
+.contant {
+  position: relative;
+  margin-left: 5%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+.contant h1 {
+  font-size: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.contant p {
+  font-size: 1.2rem;
+  font-family: "Courier New", Courier, monospace;
+}
+.contant img {
+  width: 700px;
+  height: 700px;
+}
+.about {
+  text-align: justify;
+  line-height: 1.6;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1px;
+}
+.aboutl {
+  width: 50%;
+}
+.about img {
+  width: 50%;
+}
+
+@media screen and (max-width: 931px) {
+  .about {
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .aboutl {
+    width: 100% !important;
+  }
+  .about img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+.line {
+  width: 100%;
+  height: 1px;
+  margin-top: 50px;
+  background-color: rgb(213, 211, 211);
+  box-shadow: 0px 0px 6px 2px rgb(248, 192, 192);
+}
+
+/* Services */
+
+.Services {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.servicecard {
+  width: 30%;
+}
+.servicecard img {
+  width: 300px;
+  height: 220px;
+  margin-bottom: 15px;
+}
+.fl {
+  display: flex;
+  background-color: rgb(255, 248, 248);
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0px 0px 6px 2px rgb(248, 192, 192);
+}
+@media screen and (max-width: 931px) {
+  .Services {
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .servicecard {
+    width: 100% !important;
+  }
+}
+
+/* clients */
+
+.clientscontant {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1px;
+}
+.clients {
+  text-align: justify !important;
+  line-height: 1.6;
+  width: 100%;
+}
+
+/* contact */
+
+.contact {
+  margin-top: -120px;
+  text-align: justify;
+  line-height: 1.6;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1px;
+}
+.contactcontant {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+  margin-right: 5%;
+}
+.contactcontant label {
+  font-size: 25px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.contactcontant input,
+.clientscontant textarea {
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-radius: 10px;
+  border: solid 1px gray;
+}
+
+.contact img {
+  width: 600px;
+  height: 600px;
+}
+
+@media screen and (max-width: 931px) {
+  .contact {
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .contactcontant .ta {
+    flex-direction: column !important;
+  }
+  .contactcontant input {
+    margin-bottom: 10px;
+    width: 100% !important;
+  }
+  .contactcontant {
+    width: 100% !important;
+  }
+  .contactcontant textarea {
+    margin-bottom: 10px;
+  }
+}
+
+/* footer */
+.ta {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fs {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: rgb(44, 43, 37);
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+.footer,
+.footer .fa {
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(210, 207, 207);
+}
+.footer img {
+  width: 150px;
+  height: 150px;
+}
+.fa {
+  font-size: 30px;
+  margin-left: 10px;
+  border: none;
+}
